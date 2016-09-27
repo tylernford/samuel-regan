@@ -3,18 +3,19 @@
 <title> </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="stylesheet" href="src/css/swipebox.css">
 
-<style>
-</style>
+<script src="lib/jquery-2.0.3.js"></script>
+<script src="src/js/jquery.swipebox.js"></script>
 
 <body class="garamond" style="-webkit-font-smoothing: antialiased;">
     <section class="bg-near-black near-white">
         <div class="mw7 center pb6 pb7-l">
-            <h1 class="mt0 ph3 f5 f4-ns near-white pt5 normal fw1">Samuel Regan!</h1>
+            <h1 class="mt0 ph3 f5 f4-ns near-white pt5 normal">Samuel Regan!</h1>
             <h2 class=" pl3 pt5 f5 f4-ns normal">Albums</h2>
             <div class="cf mh3 bt mt4">
                 <p class="fl">Stil de Grain</p>
-                <p class="fr courier fw1"><span class="dn-ns">09/15/15</span><span class="dn db-ns">September 15, 2015</span></p>
+                <p class="fr courier"><span class="dn-ns">09/15/15</span><span class="dn db-ns">September 15, 2015</span></p>
             </div>
             <div class="cf mh3 bt">
                 <p class="fl">Untitled (with Ben Hill)</p>
@@ -60,5 +61,14 @@
         </div>
     </main>
 </body>
+<script type="text/javascript">
+    ;
+    (function($) {
+
+        $('.swipebox').swipebox();
+
+    })(jQuery);
+
+</script>
 
 </html>
